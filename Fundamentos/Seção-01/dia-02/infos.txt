@@ -1,0 +1,6 @@
+Lianny Karoline Coringa da Costa
+O primeiro passo é ter uma pasta versionada e criar uma estrutura inicial, e fazemos isso utilizando o comando -git init-. 
+O segundo passo é criar uma branch nova com o comando -git branch nome-da-branch-.
+Também há o comando -git checkout -b nome-da-branch- que cria e já é direcionadado para a branch nova. 
+Há os comandos git add . e git commit -m "coloca o que foi alterado". 
+Depois aprenderemos como mandar para o repositório remoto.
