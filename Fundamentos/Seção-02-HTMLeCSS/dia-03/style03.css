@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+ol:hover ul:hover {
+    background-color: peachpuff;
+}
+li:active {
+    font-family: fantasy;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
