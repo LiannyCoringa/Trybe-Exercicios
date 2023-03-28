@@ -112,12 +112,30 @@
 
 
 // 2.10 
-let custo = 12;
-let venda = 100;
-let qntdVenda = 100;
-if (qntdVenda === 1000) {
-    let lucro = (venda - custo) * 1000;
-    console.log(lucro);
+// let custo = 12;
+// let venda = 100;
+// let qntdVenda = 100;
+// if (qntdVenda === 1000) {
+//     let lucro = (venda - custo) * 1000;
+//     console.log(lucro);
+// } else {
+//     console.log(`Não há 1000 produtos`);
+// }
+
+
+// 2.11
+let salario = 3600.00;
+let inss = 0;
+
+if (salario <= 1556.94) {
+    inss += (0.8 * salario);
+} else if (salario <= 2594.92 && salario > 1556.94) {
+    inss += (0.9 * salario);
+} else if (salario <= 5189.82 && salario > 2594.92) {
+    inss += (0.11 * salario);
 } else {
-    console.log(`Não há 1000 produtos`);
+    inss += 570.88
 }
+
+let salarioInss = salario - inss;
+
