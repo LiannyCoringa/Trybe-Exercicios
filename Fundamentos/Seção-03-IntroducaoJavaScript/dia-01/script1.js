@@ -124,7 +124,7 @@
 
 
 // 2.11
-let salario = 3600.00;
+let salario = 3000.00;
 let inss = 0;
 
 if (salario <= 1556.94) {
@@ -138,4 +138,17 @@ if (salario <= 1556.94) {
 }
 
 let salarioInss = salario - inss;
+let IR = 0;
 
+if (salarioInss > 1903.98 && salarioInss <= 2826.65) {
+    IR += (0.075 * salarioInss) - 142.80; 
+} else if (salarioInss >= 2826.66 && salarioInss <= 3751.05) {
+    IR += (0.15 * salarioInss) - 354.80;
+} else if (salarioInss >= 3751.06 && salarioInss <= 4664.68) {
+    IR += (salarioInss * 0.225) - 636.13;
+} else {
+    IR += (0.275 * salarioInss) - 869.36;
+}
+
+let salarioLiquido = salarioInss - IR; 
+console.log(salarioLiquido)
