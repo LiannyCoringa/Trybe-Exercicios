@@ -1,14 +1,17 @@
+// [*]
 let myName = "Lianny";
 let birthCity = "Natal";
 let birthYear = 1998;
 // console.log(myName, birthCity, birthYear)
 
+// [*]
 let base = 5;
 let height = 8;
 let area = base * height;
 let perimeter = (base * 2) + (height * 2);
 // console.log(base, height, area, perimeter)
 
+// [*]
 // let nota = 65;
 // if (nota >= 80){
 //     console.log('Parabéns, você faz parte do grupo de pessoas aprovadas!');
@@ -18,6 +21,7 @@ let perimeter = (base * 2) + (height * 2);
 //     console.log('Infelizmente, você reprovou.');
 // }
 
+// [*]
 let currentHour = 20;
 let message = '';
 if (currentHour >= 22) {
@@ -33,9 +37,29 @@ if (currentHour >= 22) {
 }
 // console.log(message)
 
-let weekDay = 'COCO';
-if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === 'quinta-feira' || weekDay === 'sexta-feira') {
-    console.log('Oba, mais um dia de aprendizado na Trybe >:D');
-} else {
-    console.log('FINALMENTE, descanso merecido UwU!');
+// [*]
+// let weekDay = 'COCO';
+// if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === 'quinta-feira' || weekDay === 'sexta-feira') {
+//     console.log('Oba, mais um dia de aprendizado na Trybe >:D');
+// } else {
+//     console.log('FINALMENTE, descanso merecido UwU!');
+// }
+
+// [*]
+let status = 'lista';
+switch (status) {
+    case 'aprovada':
+        console.log('Parabéns, você está no grupo de pessoas aprovadas!');
+        break
+
+    case 'lista':
+        console.log('Você está na nossa lista de espera.');
+        break
+
+    case 'reprovada':
+        console.log('Infelizmente, você reprovou')
+        break
+
+    default: 
+    console.log('Informação incorreta.')
 }
