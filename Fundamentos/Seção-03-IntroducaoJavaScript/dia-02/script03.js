@@ -1,6 +1,7 @@
-// let fatorial = 1;
-// for (let index = 10; index > 0; index -= 1){
-//     fatorial *= index;
+//  let fatorial = 10;
+//  for (let index = 10; index > 0; index -= 1){
+//              fatorial -= 1;
+//      console.log(fatorial * index);
 // }
 // console.log(fatorial);
 
