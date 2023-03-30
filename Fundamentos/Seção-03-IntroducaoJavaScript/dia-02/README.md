@@ -37,3 +37,7 @@ Descrição dos exercícios:
     Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele por quaisquer outros números dá resto diferente de zero.
 
 
+7. scriptBonus2.js:
+    Faça um algoritmo que indique se um número definido em uma variável é primo ou não.
+    Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele por quaisquer outros números dá resto diferente de zero.
+    Dica: você vai precisar fazer um loop que vá de 0 ao número definido. Além disso, vai precisar fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
