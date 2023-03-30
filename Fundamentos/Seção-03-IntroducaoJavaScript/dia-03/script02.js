@@ -2,7 +2,6 @@ let clientesTrybeBank = ['Ada', 'John', 'Gus'];
 
 function verificaString(cliente) {
     if (typeof cliente !== 'string') {
-        type = false;
         return `O nome precisa ser uma string.`;
     } else {
         return true;
@@ -12,7 +11,9 @@ function verificaString(cliente) {
 function verificaCliente(cliente) {
     if (clientesTrybeBank.includes(cliente)) {
         return `${cliente} encontrado`;
-    } 
+    } else {
+        return `${cliente} não encontrado`;
+    }
 }
 
 function removeCliente(cliente) {
@@ -20,13 +21,14 @@ function removeCliente(cliente) {
   if (verificacao !== true) {
         return verificacao;
       }
-
-    let verifCliente = verificaCliente(cliente);
-    if (verifCliente !== `${cliente} encontrado`){
-        return "Cliente não encontrado"
+    
+    let verif = verificaCliente(cliente);
+    if (verif !== `${cliente} encontrado`) {
+        return verif;
     }
+
     let index = clientesTrybeBank.indexOf(cliente)
     clientesTrybeBank.splice(index, 1); 
         return `Cliente excluído com sucesso.`;
 }
-    console.log(removeCliente(5))
+    console.log(removeCliente('John'))
