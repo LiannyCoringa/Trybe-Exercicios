@@ -11,3 +11,6 @@ Descrição dos exercícios:
 2. script01.js:
     Com base no objeto a seguir, utilize for/in e imprima no console a mensagem 'Olá, xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
     Usando o objeto abaixo, utilize for/in e imprima um console.log com as chaves e valores desse objeto.
+
+3. script02.js:
+    Adicione suas informações ao objeto student = {}, como nome, e-mail, telefone, GitHub e LinkedIn, usando os métodos abordados no conteúdo.
