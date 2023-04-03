@@ -93,3 +93,45 @@ for (let key in myFrutas) {
 } return objetoFrutas;
 }
 console.log(objetoFrutas(basket))
+
+
+let moradores = {
+    blocoUm: [
+      {
+        nome: 'Luíza',
+        sobrenome: 'Guimarães',
+        andar: 10,
+        apartamento: 1005,
+      },
+      {
+        nome: 'William',
+        sobrenome: 'Albuquerque',
+        andar: 5,
+        apartamento: 502,
+      },
+    ],
+    blocoDois: [
+      {
+        nome: 'Murilo',
+        sobrenome: 'Ferraz',
+        andar: 8,
+        apartamento: 804,
+      },
+      {
+        nome: 'Zoey',
+        sobrenome: 'Brooks',
+        andar: 1,
+        apartamento: 101,
+      },
+    ],
+  };
+  console.log(`O morador do bloco 2 de nome ${moradores['blocoDois'][1].nome} ${moradores['blocoDois'][1].sobrenome} mora no ${moradores['blocoDois'][1].andar} andar, apartamento ${moradores['blocoDois'][1].apartamento}`);
+
+let bloco1 = moradores['blocoUm'];
+let bloco2 = moradores['blocoDois'];
+for (let morador of bloco1) {
+    console.log(`${morador['nome']} ${morador['sobrenome']}`)
+}
+for (let morador of bloco2) {
+    console.log(`${morador['nome']} ${morador['sobrenome']}`)
+}
