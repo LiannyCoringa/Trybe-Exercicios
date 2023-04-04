@@ -28,7 +28,7 @@ addProperty(lesson2, 'turno', 'noite');
     lesson2: lesson2,
     lesson3: lesson3,
 });
-console.log(allLessons)
+// console.log(allLessons)
 
 function numberStudent(object, materias) {
     let sum = 0;
@@ -38,20 +38,25 @@ function numberStudent(object, materias) {
        }
     } return sum;
 }
-console.log(numberStudent(allLessons, 'Matemática'))
+// console.log(numberStudent(allLessons, 'Matemática'))
 
-function relatorio (object, pessoa) {
-    let objetoRelatorio = {};
-    let aula = [];
-    let estudante = object[key]['numeroEstudantes']
-    for (let key in object) {
-        if (object[key][professor] === pessoa) {
-            objetoRelatorio['professor'] = pessoa;
-            objetoRelatorio['aulas'] += aula.push(object[key]['materia']);
-            objetoRelatorio['estudantes'] += estudante
-        }
+function relatorio(object, teacher) {
+  let arrayValue = Object.values(object);
+  let numberStudent = 0;
+  let materias = [];
+  for (let index in arrayValue) {
+    if (arrayValue[index]['professor'] === teacher) {
+      materias.push(arrayValue[index]['materia']);
+      numberStudent += arrayValue[index].numeroEstudantes;
     }
-
-    return objetoRelatorio;
+  }
+    return { aulas: materias, estudantes: numberStudent };
 }
-console.log(relatorio(allLessons, 'Maria Clara'))
+function createReport(object, teacher) {
+  let report = {};
+  report.professor = teacher;
+  Object.assign(report, relatorio(object, teacher));
+  return report;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'))
