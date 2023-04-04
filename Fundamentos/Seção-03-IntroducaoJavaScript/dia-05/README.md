@@ -11,3 +11,8 @@ Descrição dos exercícios:
     Transforme a função hello em uma arrow function.
     Transforme a função nomeCompleto em uma arrow function.
     Altere a expressão if/else utilizando ternary operator.
+
+2. script01.js:
+    Crie uma função que ligue e desligue o motor de um carro.
+    Crie uma função que calcule a área de um círculo.
+    Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
