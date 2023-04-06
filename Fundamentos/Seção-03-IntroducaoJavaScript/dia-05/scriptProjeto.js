@@ -222,3 +222,48 @@ const techList = (array, nome) => {
     } return retorno;
   }
   console.log(techList(myArray, nomes))
+
+  // Requisito 11:
+  let meuArray = [0, 21, 3, 4, 14, 2, 7, 8, 19, 9, 4];
+  const repeticao = (array) => {
+    let quantity = 0;
+    for (let index = 0; index < array.length; index += 1) {
+      for (let index2 = 0; index2 < array.length; index2 += 1) {
+        array[index] === array[index2] ? quantity += 1 : quantity += 0;
+      }
+      if (quantity >= 3) {
+        break;
+      } else {
+      quantity = 0;
+      }
+    } return quantity;
+  }
+  const erros = (array) => {
+    let repetidos = repeticao(array);
+    let message = true;
+    for (let index = 0; index < array.length; index += 1) {
+      if (array[index] < 0 || array[index] > 9 || repetidos >= 3) {
+      message = false;
+      break;
+      } else {
+        message;
+      }
+    } return message;
+  }
+  const generatePhoneNumber = (array) => {
+  let erroMessage = erros(array);
+  let message = `(${array[0]}${array[1]}) `;
+  if (array.length < 11) {
+    message = 'Array com tamanho incorreto.';
+  } else if (array.length === 11) {
+    if (erroMessage === false) {
+      message = 'não é possível gerar um número de telefone com esses valores';
+    } else if (erroMessage === true) {
+      for (let index = 2; index < array.length; index += 1) {
+        message += array[index];
+      }
+  } return message;
+}
+  }
+
+console.log(generatePhoneNumber(meuArray))
