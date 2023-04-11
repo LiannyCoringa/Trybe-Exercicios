@@ -1,0 +1,9 @@
+const whereAreYou = document.getElementById('where-are-you');
+const parent = whereAreYou.parentNode;
+parent.style.color = 'pink';
+const firstChildOfChild = document.getElementById('first-child-of-child');
+firstChildOfChild.innerText = "Good morning, world!!!";
+const firstChild = parent.firstChild;
+const firstChilds = whereAreYou.previousSibling;
+const thirdChild = whereAreYou.nextElementSibling;
+const thirdChilds = parent.lastChild.previousSibling;
