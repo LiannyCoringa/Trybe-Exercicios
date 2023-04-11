@@ -15,3 +15,6 @@ Descrição dos exercícios:
     Crie um filho para elementoOndeVoceEsta.
     Crie um filho para primeiroFilhoDoFilho.
     A partir desse filho criado, acesse terceiroFilho.
+
+03. index3.html script3.js:
+    Remova a tag h2, filha do elemento where-are-you.
