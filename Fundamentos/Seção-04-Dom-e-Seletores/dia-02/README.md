@@ -9,3 +9,9 @@ Descrição dos exercícios:
     Acesse o texto Attention! a partir de where-are-you.
     Acesse o third-child a partir de where-are-you.
     Acesse o third-child a partir de parent.
+
+02. index2.html script2.js:
+    Crie um irmão para elementoOndeVoceEsta.
+    Crie um filho para elementoOndeVoceEsta.
+    Crie um filho para primeiroFilhoDoFilho.
+    A partir desse filho criado, acesse terceiroFilho.
