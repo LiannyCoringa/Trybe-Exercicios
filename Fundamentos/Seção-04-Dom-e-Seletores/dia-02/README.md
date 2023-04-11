@@ -29,3 +29,11 @@ Descrição dos exercícios:
     Adicione uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
     Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha do section criado no passo 6;
     Adicione 3 tags h3, todas filhas do main criado no passo 2.
+
+    BÔNUS:
+    Adicione a classe title na tag h1 criada;
+    Adicione a classe description nas 3 tags h3 criadas;
+    Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();
+    Centralize a section criada no passo 6 (aquela que possui a classe right-content).
+    Troque a cor de fundo do elemento-pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+    Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.

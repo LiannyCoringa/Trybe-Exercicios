@@ -40,6 +40,13 @@ sectionThree.appendChild(list);
 for (let index = 1; index <= 3; index += 1) {
     const h3 = document.createElement('h3');
     h3.innerText = index;
+    h3.className = 'description';
     main.appendChild(h3);
 }
 
+h1.className = 'title';
+main.removeChild(sectionTwo);
+sectionThree.style.marginRight = 'auto';
+section.parentElement.style.backgroundColor = 'green';
+list.lastElementChild.remove();
+list.lastElementChild.remove();
