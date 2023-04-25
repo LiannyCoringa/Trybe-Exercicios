@@ -44,8 +44,43 @@ html {
         padding-top: 20px;
     }
 }
- @media screen {
-
+ @media screen and (min-width: 769px) and (max-width: 991px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 20px;
+        width: 50%;
+    }
+    aside h2 {
+        font-size: x-large;
+    }
+    .main-content {
+        padding: 20px;
+        background-color: blanchedalmond;
+    }
+    .main-content h1 {
+        font-size: xx-large
+    }
+    footer {
+        padding: 20px;
+        background-color: beige;
+    }
+    footer h3 {
+        font-size: large;
+        text-align: center;
+        padding-top: 20px;
+    }
  }
 
  @media screen {
