@@ -54,6 +54,12 @@ html {
         align-items: center;
         background-color: antiquewhite;
     }
+    header p {
+        font-size: 15px;
+    }
+    header nav {
+        font-size: 15px;
+    }
     .asideContainer {
         display: flex;
         background-color: beige;
@@ -79,10 +85,44 @@ html {
     footer h3 {
         font-size: large;
         text-align: center;
-        padding-top: 20px;
+        padding: 20px;
     }
  }
 
- @media screen {
-
+ @media screen and (min-width: 992px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    header p {
+        font-size: 20px;
+    }
+    header nav {
+        font-size: 20px;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 30px;
+        width: 50%;
+    }
+    .main-content {
+        padding: 30px;
+        background-color: blanchedalmond;
+    }
+    footer {
+        padding: 30px;
+        background-color: beige;
+    }
+    footer h3 {
+        text-align: center;
+        padding: 20px;
+    }
  }
