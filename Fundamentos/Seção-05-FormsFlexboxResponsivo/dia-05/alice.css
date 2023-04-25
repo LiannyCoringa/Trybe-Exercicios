@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 10px;
+        width: 50%;
+    }
+    aside h2 {
+        font-size: large;
+    }
+    .main-content {
+        padding: 10px;
+        background-color: blanchedalmond;
+    }
+    .main-content h1 {
+        font-size: x-large
+    }
+    footer {
+        padding: 10px;
+        background-color: beige;
+    }
+    footer h3 {
+        font-size: medium;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+ @media screen {
+
+ }
+
+ @media screen {
+
+ }
