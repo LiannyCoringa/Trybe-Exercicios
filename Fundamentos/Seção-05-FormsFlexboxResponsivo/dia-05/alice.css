@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 10px;
+        width: 50%;
+    }
+    aside h2 {
+        font-size: large;
+    }
+    .main-content {
+        padding: 10px;
+        background-color: blanchedalmond;
+    }
+    .main-content h1 {
+        font-size: x-large
+    }
+    footer {
+        padding: 10px;
+        background-color: beige;
+    }
+    footer h3 {
+        font-size: medium;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+ @media screen and (min-width: 769px) and (max-width: 991px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    header p {
+        font-size: 15px;
+    }
+    header nav {
+        font-size: 15px;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 20px;
+        width: 50%;
+    }
+    aside h2 {
+        font-size: x-large;
+    }
+    .main-content {
+        padding: 20px;
+        background-color: blanchedalmond;
+    }
+    .main-content h1 {
+        font-size: xx-large
+    }
+    footer {
+        padding: 20px;
+        background-color: beige;
+    }
+    footer h3 {
+        font-size: large;
+        text-align: center;
+        padding: 20px;
+    }
+ }
+
+ @media screen and (min-width: 992px) {
+    body {
+        font-size: medium;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    header p {
+        font-size: 20px;
+    }
+    header nav {
+        font-size: 20px;
+    }
+    .asideContainer {
+        display: flex;
+        background-color: beige;
+    }
+    aside {
+        margin: 30px;
+        width: 50%;
+    }
+    .main-content {
+        padding: 30px;
+        background-color: blanchedalmond;
+    }
+    footer {
+        padding: 30px;
+        background-color: beige;
+    }
+    footer h3 {
+        text-align: center;
+        padding: 20px;
+    }
+ }
