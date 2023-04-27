@@ -129,4 +129,20 @@ console.log(findPersonByPosition(6));
 
 const findPeopleByState = (state) => {
   // seu código aqui
+//   A função findPeopleByState recebe um estado por parâmetro e retorna um array contendo o nome das pessoas que moram naquele estado.
+// Caso a função findPeopleByState localize nenhuma pessoa no estado, lance uma exceção com a mensagem 'Ops, nenhuma pessoa mora nesse estado, tente outro';
+    try {
+        let retorno = '';
+        for (let index = 0; index < clients.length; index += 1) {
+            if (clients[index].address.state === state) {
+                retorno += `${clients[index].name}, `;
+            }
+        }
+        if (retorno === '') {
+            throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+        } return retorno;
+    } catch(erro) {
+        return erro.message;
+    }
 };
+console.log(findPeopleByState('RJ'));
