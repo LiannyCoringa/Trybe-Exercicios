@@ -30,26 +30,43 @@ const formInfos = document.querySelector('#form-data');
 const nome = document.querySelector('#input-name');
 const emails = document.querySelector('#input-email');
 const house = document.querySelector('#house');
-const familia = document.querySelector('input[name="family"]');
+const familia = document.querySelectorAll('input[name="family"]');
 const materias = document.querySelectorAll('.subject');
-const avaliação = document.querySelector('input[name="rate"]');
+const avaliação = document.querySelectorAll('input[name="rate"]');
 const formulario = document.querySelector('#evaluation-form');
 const texto = document.querySelector('textarea');
+
 formInfos.style.display = 'none';
 
 buttonSubmit.addEventListener('click', (event) => {
     event.preventDefault();
-    for (let index = 0; index < materias.length; index += 1) {
-        let materiasSelecionadas = '';
-        materiasSelecionadas += `${materias[index]}, `;
+    let familiachecked = '';
+    for (let index1 = 0; index1 < familia.length; index1 += 1) {
+    if (familia[index1].checked) {
+        familiachecked = familia[index1].value;
         }
+    }
+    let materiasSelecionadas = '';
+    for (let index2 = 0; index2 < materias.length; index2 += 1) {
+        if (materias[index2].checked) {
+            materiasSelecionadas += `${materias[index2].value}, `;
+        }
+    }
+    let avaliaçãoselecionada = '';
+    for (let index3 = 0; index3 < avaliação.length; index3 += 1) {
+        if (avaliação[index3].checked) {
+            avaliaçãoselecionada = avaliação[index3].value;
+        }
+    }
 
-        let infos = [`Nome: ${nome.value}`, `Email: ${emails.value}`, `Casa: ${optionSelected}`, `Família: ${familia.value}`, `Matérias: ${materiasSelecionadas}`, `Avaliação: ${avaliação}`, `Observações: ${texto.value}`];
-        for (let index = 0; index < infos.length; index += 1) {
-            const parag = document.createElement('p');
-            parag.innerText = infos[index];
-            formInfos.appendChild(parag);
-        }
+    let infos = [`Nome: ${nome.value}`, `Email: ${emails.value}`, `Casa: ${house.value}`, `Família: ${familiachecked}`, `Matérias: ${materiasSelecionadas}`, `Avaliação: ${avaliaçãoselecionada}`, `Observações: ${texto.value}`];
+    for (let index = 0; index < infos.length; index += 1) {
+        const parag = document.createElement('p');
+        parag.innerText = infos[index];
+        formInfos.appendChild(parag);
+    }
+    formulario.style.display = 'none';
+    formInfos.style.display = 'block';
 })
-// FALTA PEGAR OS SELECIONADOS;
+
 // FALTA DESCOBRIR COMO APAGAR O FORM E ACRESCENTAR O INPUT;
