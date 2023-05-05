@@ -11,3 +11,5 @@ Exercicios:
     A ausência de uma resposta não altera a pontuação (quando for “N.A”);
     Uma resposta incorreta reduz a pontuação final em 0.5 ponto.
     Ao final, a HOF deve retornar o total de pontos obtidos através das respostas fornecidas pela pessoa estudante
+
+2. Organizando uma biblioteca:
